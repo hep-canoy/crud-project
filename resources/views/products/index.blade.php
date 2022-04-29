@@ -31,7 +31,7 @@
                 <td>{{ $product->details }}</td>
                 <td>
                     <form action="" method="post">
-                        <a class="btn btn-info btn-sm" href="">Show</a>
+                        <a class="btn btn-info btn-sm" href="{{ route('products.show', $product->id) }}">Show</a>
                         <a class="btn btn-primary btn-sm" href="">Edit</a>
                         <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                     </form>
