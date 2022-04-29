@@ -14,11 +14,11 @@
         @csrf
         <div class="form-group">
             <label for="exampleFormControlInput1">Name:</label>
-            <input class="form-control" type="text" name="productName">
+            <input class="form-control" type="text" name="name">
         </div>
         <div class="form-group mt-3">
-            <label for="exampleFormControlTextarea1">Description:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="productDesc"></textarea>
+            <label for="exampleFormControlTextarea1">Details:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="details"></textarea>
         </div>
         <div class="text-center">
             <button type="submit" class="btn btn-primary btn-lg m-5">Submit</button>
