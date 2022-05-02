@@ -9,6 +9,16 @@
         <a href="{{ route('products.index') }}" class="btn btn-primary back">Back</a>
     </div>
 
+    @if ($errors->any())
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Warning! There are problems with your inputs.</h4>
+            @foreach ($errors->all() as $error)
+            <p class="mb-0">>{{ $error }}</p>
+            @endforeach
+    </div>
+    @endif
+    
+
 
     <form action="{{ route('products.store') }}" method="POST">
         @csrf

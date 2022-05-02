@@ -21,5 +21,6 @@ Route::get('/products', [ProductController::class, 'index'])->name('products.ind
 Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
 Route::post('/products/create', [ProductController::class, 'store'])->name('products.store');
 Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
-Route::delete('/products/{id}', [ProductController::class, 'destroy'])->name('products.destroy');
-Route::edit('/products/{id}', [ProductController::class, 'edit'])->name('products.edit');
+Route::get('/products/delete/{id}', [ProductController::class, 'destroy'])->name('products.destroy');
+Route::get('/products/edit/{id}', [ProductController::class, 'edit'])->name('products.edit');
+Route::put('/products/edit/{id}', [ProductController::class, 'update'])->name('products.update');
