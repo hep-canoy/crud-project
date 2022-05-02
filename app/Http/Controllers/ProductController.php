@@ -89,7 +89,7 @@ class ProductController extends Controller
         ]);
 
 
-        $product = Product::find($id);
+        $product = Product::findorfail($id);
         $product->name = $request->input('name');
         $product->details = $request->input('details');
         $product->update();
