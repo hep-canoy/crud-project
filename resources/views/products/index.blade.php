@@ -30,12 +30,12 @@
                 <td>{{ $product->name }}</td>
                 <td>{{ $product->details }}</td>
                 <td>
-                    <form action="" method="post">
                         <a class="btn btn-info btn-sm" href="{{ route('products.show', $product->id) }}">Show</a>
-                        <a class="btn btn-primary btn-sm" href="">Edit</a>
-                        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
-                    </form>
-                    
+                        <a class="btn btn-primary btn-sm" href="{{ route('products.edit', $product->id) }}">Edit</a>
+                        <a class="btn btn-danger btn-sm" href="{{ route('products.destroy', $product->id) }}">Delete</a>
+                        
+                   
+                   
                 </td>
             </tr>
             @endforeach
